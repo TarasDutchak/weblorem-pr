@@ -1,0 +1,195 @@
+header.header {
+    position: fixed;
+    left: 0;
+    top: 20px;
+    width: 100%;
+    z-index: 11;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+
+    &.sticky {
+        background: #08090A;
+        top: 0;
+        height: 70px;
+    }
+}
+
+.header__logo {
+    a {
+        img {
+            vertical-align: top;
+            max-width: 190px;
+        }
+    }
+}
+
+.header__rightsect {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    nav {
+        width: 100%;
+        max-width: calc(100% - 332px);
+        flex: 0 0 calc(100% - 332px);
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        ul {
+            list-style-type: none;
+            padding: 0 35px 0 0;
+            margin: 0;
+            display: flex;
+
+            li {
+                margin-right: 70px;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                a {
+                    color: #fff;
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 165%;
+                    letter-spacing: 0.32px;
+                    text-transform: capitalize;
+                    text-decoration: none;
+                    transition: 0.3s;
+
+                    &:hover {
+                        color: #F75709;
+                        
+                    }
+                }
+            }
+        }
+    }
+
+    .header__language {
+        width: 100%;
+        max-width: 70px;
+        flex: 0 0 70px;
+        position: relative;
+
+        .current-lang {
+            display: flex;
+            align-items: center;
+            padding: 7px 10px;
+            border-radius: 20px;
+            background: rgba(15, 15, 15, 0.61);
+            cursor: pointer;
+
+            img {
+                width: 100%;
+                max-width: 18px;
+                flex: 0 0 18px;
+            }
+
+            span {
+                width: 100%;
+                max-width: calc(100% - 18px);
+                flex: 0 0 calc(100% - 18px);
+                padding-left: 8px;
+                color: #fff;
+                font-size: 15px;
+                letter-spacing: 1.05px;
+            }
+        }
+
+        .language-list {
+            padding-top: 10px;
+            position: absolute;
+            top: 100%;
+            width: 100%;
+            display: none;
+
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 8px;
+                background: rgba(15, 15, 15, 0.61);
+                width: 100%;
+                border-radius: 10px;
+            }
+
+            li {
+                a {
+                    text-decoration: none;
+                    color: #fff;
+                    font-size: 15px;
+                    letter-spacing: 1.05px;
+                    display: block;
+                    text-align: center;
+                    transition: 0.3s;
+
+                    &:hover {
+                        color: #F75709;
+                    }
+                }
+            }
+        }
+    }
+
+    .header__contactbtnwrap {
+        width: 100%;
+        max-width: 262px;
+        flex: 0 0 262px;
+        padding-left: 30px;
+
+        a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 52px;
+            border-radius: 30px;
+            background: #0B0B0B;
+            width: 100%;
+            text-decoration: none;
+            transition: 0.3s;
+            border: 1px solid #0B0B0B;
+
+            span {
+                background: var(--Orange-gradient, linear-gradient(221deg, #FFB100 14.88%, #F75709 109.67%));
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                font-size: 16px;
+                font-weight: 600;
+                letter-spacing: 1.6px;
+                text-transform: capitalize;
+                transition: 0.3;
+            }
+
+            img, svg {
+                max-width: 14px;
+                margin-left: 10px;
+            }
+
+            svg {
+                path {
+                    transition: 0.3s;
+                }
+            }
+
+            &:hover {
+                border: 1px solid #F75709;
+                box-shadow: 0 0 20px rgba(247, 87, 9, 0.3);
+
+                svg {
+
+                    path {
+                        stroke: #FFB100;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+

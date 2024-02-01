@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+// font-family: "Montserrat Alternates", sans-serif;
+@font-face {
+    font-family: 'Neutral Face';
+    src: url('../../fonts/NeutralFaceRegular.eot');
+    src: local('Neutral Face'), local('NeutralFaceRegular'),
+        url('../../fonts/NeutralFaceRegular.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/NeutralFaceRegular.woff2') format('woff2'),
+        url('../..fonts//NeutralFaceRegular.woff') format('woff'),
+        url('../../fonts/NeutralFaceRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neutral Face';
+    src: url('../../fonts/NeutralFaceBold.eot');
+    src: local('Neutral Face Bold'), local('NeutralFaceBold'),
+        url('../../fonts/NeutralFaceBold.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/NeutralFaceBold.woff2') format('woff2'),
+        url('../../fonts/NeutralFaceBold.woff') format('woff'),
+        url('../../fonts/NeutralFaceBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@media(min-width:1500px) {
+    .container {
+        max-width: 1450px;
+    }
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background: #F6F6F6;
+    font-size: 16px;
+    line-height: 160%;
+}
+
+h3 {
+    font-size: 43px;
+    line-height: 160%;
+    letter-spacing: 2.15px;
+    text-transform: uppercase;
+    color: #000;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
