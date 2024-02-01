@@ -6,12 +6,12 @@
 
 @font-face {
     font-family: 'Neutral Face';
-    src: url('../../fonts/neutralfaceregular.eot');
+    src: url('../fonts/neutralfaceregular.eot');
     src: local('Neutral Face'), local('NeutralFaceRegular'),
-        url('../../fonts/neutralfaceregular.eot?#iefix') format('embedded-opentype'),
-        url('../../fonts/neutralfaceregular.woff2') format('woff2'),
-        url('../..fonts//neutralfaceregular.woff') format('woff'),
-        url('../../fonts/neutralfaceregular.ttf') format('truetype');
+        url('../fonts/neutralfaceregular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/neutralfaceregular.woff2') format('woff2'),
+        url('..fonts//neutralfaceregular.woff') format('woff'),
+        url('../fonts/neutralfaceregular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -19,12 +19,12 @@
 
 @font-face {
     font-family: 'Neutral Face';
-    src: url('../../fonts/neutralfacebold.eot');
+    src: url('../fonts/neutralfacebold.eot');
     src: local('Neutral Face Bold'), local('NeutralFaceBold'),
-        url('../../fonts/neutralfacebold.eot?#iefix') format('embedded-opentype'),
-        url('../../fonts/neutralfacebold.woff2') format('woff2'),
-        url('../../fonts/neutralfacebold.woff') format('woff'),
-        url('../../fonts/neutralfacebold.ttf') format('truetype');
+        url('../fonts/neutralfacebold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/neutralfacebold.woff2') format('woff2'),
+        url('../fonts/neutralfacebold.woff') format('woff'),
+        url('../fonts/neutralfacebold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
