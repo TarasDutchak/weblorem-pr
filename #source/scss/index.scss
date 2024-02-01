@@ -3,6 +3,7 @@
     position: relative;
     display: flex;
     align-items: center;
+    min-height: 580px;
 
     .welcomesection__bg {
         width: 100%;
@@ -599,6 +600,7 @@
 
             &:hover {
                 filter: drop-shadow(0 0 10px #F75709);
+
                 img {
                     transform: rotate(45deg);
                 }
@@ -616,7 +618,7 @@
                 .casebox {
                     transform: translateY(80px);
                 }
-                
+
             }
         }
     }
@@ -879,5 +881,148 @@
         }
 
     }
-    
+
+}
+
+// --
+.animation-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    height: 300px;
+}
+
+.animation-container span {
+    position: absolute;
+    color: #fff;
+    display: block;
+    font-size: 18px;
+    font-family: 'Helvetica';
+    text-shadow: 0 0 1px #F75709;
+    user-select: none;
+    pointer-events: none;
+    cursor: default;
+    z-index: 1;
+    opacity: 0;
+    top: 0;
+    will-change: transform, opacity;
+    animation-timing-function: ease-out;
+    animation-name: move;
+}
+
+@keyframes move {
+    0% {
+        opacity: 0;
+        top: 100%;
+    }
+
+    25% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    75% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+        transform: none;
+    }
+}
+
+
+@media(max-width:1599.8px) {
+
+    .welcomesection .arrowbutton {
+        margin-top: 60px;
+    }
+
+    .welcomesection h1 {
+        font-size: 44px;
+    }
+}
+
+@media(max-width:1440.8px) {
+    .history {
+        padding: 100px 0;
+    }
+
+    .solution {
+        padding: 100px 0 200px;
+    }
+
+    .solution__topsect {
+        margin-bottom: 80px;
+    }
+
+    .orderconsultation {
+        padding: 100px 0;
+    }
+
+    .cases {
+        padding: 100px 0 100px;
+    }
+
+    .cases:after {
+        height: 330px;
+    }
+
+    .contsect {
+        padding: 100px 0;
+    }
+
+}
+
+@media(max-width:1399.8px) {
+
+    .welcomesection h1 {
+        font-size: 42px;
+    }
+
+    .arrowbutton {
+        .linkarrimg {
+            flex: 0 0 60px;
+            max-width: 60px;
+            height: 60px;
+
+            img {
+                width: 22px;
+            }
+        }
+
+        .linktext {
+            max-width: calc(100% - 60px);
+            flex: 0 0 calc(100% - 60px);
+        }
+    }
+
+    .history__left .history-infobtn .countinf {
+        font-size: 32px;
+    }
+
+    .historyel3 {
+        width: 600px;
+    }
+
+    .history__left .history-infobtn {
+        margin-bottom: 30px;
+    }
+
+    .solutionbox .solutionbox__info .title {
+        font-size: 16px;
+        margin-bottom: 15px;
+        padding-bottom: 8px;
+        letter-spacing: normal;
+    }
+
+    .casebox .casebox__img:after {
+        width: 200px;
+    }
+
 }

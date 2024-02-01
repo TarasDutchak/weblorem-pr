@@ -25,6 +25,10 @@ footer.footer {
                     transition: 0.3s;
                     color: #797979;
                     font-weight: 500;
+
+                    &:hover {
+                        color: #F75709;
+                    }
                 }
             }
         }
@@ -49,9 +53,15 @@ footer.footer {
                     align-items: center;
                     justify-content: center;
                     background: #191919;
+                    border: 1px solid #191919;
+                    transition: 0.3s;
 
                     img {
                         max-width: 100%;
+                    }
+
+                    &:hover {
+                        border: 1px solid #fff;
                     }
                 }
             }
@@ -78,4 +88,28 @@ footer.footer {
         }
     }
 
+}
+
+
+
+
+
+
+
+
+@media(max-width:1599.8px) {
+    footer.footer {
+        padding: 80px 0 0 0;
+    }
+
+    footer.footer .footer__topsection {
+        padding-bottom: 60px;
+    }
+  
+}
+
+@media(max-width:1399.8px) {
+    footer.footer .footer__socials ul li {
+        margin: 0 5px;
+    }
 }
