@@ -892,6 +892,7 @@
     right: 0;
     z-index: 1;
     height: 300px;
+    opacity: 0.5;
 }
 
 .animation-container span {
@@ -1025,4 +1026,316 @@
         width: 200px;
     }
 
+}
+
+@media(max-width:1199.8px) {
+
+    .history__left .history-infobtn:nth-child(2) {
+        margin-left: 30px;
+    }
+
+    .history__left .history-infobtn:nth-child(3) {
+        margin-left: 60px;
+    }
+
+    .solutionbox .solutionbox__info .title {
+        font-size: 14px;
+    }
+
+    .solutionbox .solutionbox__info .descr {
+        font-size: 12px;
+        -webkit-line-clamp: 5;
+    }
+
+    .solutionbox .solarr {
+        top: 15px;
+        right: 15px;
+    }
+
+    .solution__bottomsect {
+        .row {
+            margin-left: -5px;
+            margin-right: -5px;
+
+            .col {
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+        }
+    }
+
+    .solutionbox .solutionbox__info {
+        transform: translateY(110px);
+    }
+
+    .orderconsultation form .arrowbutton {
+        margin-top: 40px;
+    }
+
+    .cases .cases_topsect a {
+        font-size: 16px;
+        padding-right: 40px;
+        max-width: 180px;
+    }
+
+    .cases .cases_topsect {
+        margin-bottom: 30px;
+    }
+
+    .contsect form .checkfield {
+        margin-bottom: 30px;
+    }
+
+
+
+
+    .solution {
+        padding: 80px 0 160px;
+    }
+
+    .history,
+    .orderconsultation,
+    .cases,
+    .contsect {
+        padding: 80px 0;
+    }
+
+}
+
+@media(max-width:991.8px) {
+    .history {
+        .col-lg-6 {
+            &:nth-child(1) {
+                order: 2;
+            }
+
+            &:nth-child(2) {
+                order: 1;
+            }
+        }
+    }
+
+    .historyel2 {
+        top: 120px;
+        left: 60%;
+    }
+
+    .historyel1 {
+        left: 80%;
+    }
+
+    .historyel3 {
+        animation: none;
+    }
+
+    .history__left {
+        margin-top: 20px;
+    }
+
+    .solution__bottomsect .row .col {
+        width: 100%;
+        max-width: 50%;
+        flex: 0 0 50%;
+        margin-top: 20px;
+    }
+
+    .solution__bottomsect .col:nth-child(2n) .solutionbox {
+        transform: none;
+    }
+
+    .solution__bottomsect .row {
+        margin-left: -12px;
+        margin-right: -12px;
+
+        .col {
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+    }
+
+    .solutionbox .solutionbox__info .title {
+        font-size: 20px;
+        padding-bottom: 12px;
+    }
+
+    .solutionbox .solutionbox__info .descr {
+        font-size: 16px;
+    }
+
+    .solutionbox .solutionbox__info {
+        transform: translateY(130px);
+    }
+
+    .solution__topsect {
+        margin-bottom: 50px;
+    }
+
+    .solution {
+        padding-bottom: 80px;
+
+    }
+
+    .orderconsultation form {
+        .inputfield {
+            margin-bottom: 20px;
+        }
+    }
+
+    .contsect {
+        .imgwrap {
+            display: none;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+@media(max-width:767.8px) {
+    .welcomesection h1 {
+        font-size: 36px;
+    }
+
+    .welcomesection .welcomesection__socials {
+        bottom: 40px;
+    }
+
+    .history__right .description p {
+        font-weight: 400;
+    }
+
+    .history__left .history-infobtn {
+        max-width: 320px;
+        margin-bottom: 20px;
+
+        .countinf {
+            font-size: 28px;
+            max-width: 80px;
+            flex: 0 0 80px;
+        }
+
+        .inftext {
+            font-size: 16px;
+            max-width: calc(100% - 80px);
+            flex: 0 0 calc(100% - 80px);
+        }
+    }
+
+
+}
+
+@media(max-width:575.8px) {
+    .solution__bgel {
+        display: none;
+    }
+
+    .welcomesection h1 {
+        font-size: 25px;
+    }
+
+    .arrowbutton .linktext {
+        font-size: 18px;
+        padding-left: 15px;
+    }
+
+    .arrowbutton .linkarrimg {
+        flex: 0 0 40px;
+        max-width: 40px;
+        height: 40px;
+
+        img {
+            width: 14px;
+        }
+    }
+
+    .welcomesection .arrowbutton {
+        margin-top: 30px;
+    }
+
+    .welcomesection .welcomesection__socials {
+        bottom: 20px;
+    }
+
+    .historyel2 {
+        top: 30px;
+        left: initial;
+        right: 20px;
+    }
+
+    .history h3 {
+        margin-bottom: 20px;
+    }
+
+    .history__right .description {
+        margin-bottom: 30px;
+    }
+
+    .history__left {
+        margin-top: 30px;
+    }
+
+    .history__left .history-infobtn:nth-child(2),
+    .history__left .history-infobtn:nth-child(3) {
+        margin-left: 0;
+    }
+
+    .history__left .history-infobtn {
+        max-width: 100%;
+    }
+
+    .historyel1 {
+        display: none;
+    }
+
+    .history__left .history-infobtn {
+        min-height: 70px;
+        z-index: 2;
+        position: relative;
+    }
+
+    .solution__bottomsect .row .col {
+        width: 100%;
+        max-width: 100%;
+        flex: 0 0 100%;
+        margin-top: 20px;
+    }
+
+    .animation-container {
+        display: none;
+    }
+
+    .cases h3 {
+        margin-bottom: 20px;
+    }
+
+    .cases .wlslider .swiper-slide:nth-child(odd) .casebox {
+        transform: translateY(0);
+    }
+
+    .cases .wlslider {
+        padding-bottom: 50px;
+    }
+
+
+
+    .cases,
+    .contsect,
+    .history,
+    .orderconsultation,
+    .solution {
+        padding: 50px 0;
+    }
 }
