@@ -120,7 +120,7 @@ $(document).ready(function () {
 
 
     // CASES
-    $('.sidebarbox .title').click(function(){
+    $('.sidebarbox .title').click(function () {
         $(this).next('.sidebarbox__selects').slideToggle();
         $(this).parent().toggleClass('show');
     });
@@ -129,9 +129,13 @@ $(document).ready(function () {
     var swiper = new Swiper(".wlslider.s2", {
         slidesPerView: 3,
         spaceBetween: 30,
+        // autoplay: {
+        //     delay: 2500,
+        //     disableOnInteraction: false,
+        //   },
         breakpoints: {
             320: {
-                slidesPerView: 1,
+                slidesPerView: 1.2,
                 spaceBetween: 20,
             },
 
@@ -162,12 +166,16 @@ $(document).ready(function () {
 
     // МАСКА
     $('.telinput').inputmask({
-        "mask": "+ 389999999999",
+        "mask": "+ 999999999999",
         showMaskOnHover: false,
         showMaskOnFocus: false,
     });
 
-
+    // кейси прелоадер
+    $('.selectfield input[type="checkbox"]').change(function(){
+        console.log('sdsd')
+        $('.loadercases').show().delay(3000).fadeOut();
+    });
 
 
 

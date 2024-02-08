@@ -625,9 +625,14 @@
 }
 
 .casebox {
+    display: block;
+    text-decoration: none;
+    overflow: hidden;
+
     .casebox__img {
         position: relative;
         height: 260px;
+
 
         .slideimg {
             width: 100%;
@@ -636,6 +641,8 @@
             object-fit: cover;
             object-position: 50% 50%;
             border-radius: 20px 20px 0 0;
+            transition: 0.5s;
+            animation-timing-function: ease-in-out;
         }
 
         .slidelogo {
@@ -710,7 +717,7 @@
                         margin-right: 0;
                     }
 
-                    a {
+                    a, span {
                         color: #757575;
                         font-size: 14px;
                         letter-spacing: 0.7px;
@@ -760,6 +767,19 @@
                 font-weight: 600;
             }
         }
+    }
+
+    &:hover {
+        .arrowbutton {
+            .linkarrimg {
+                animation: pulse1 1.6s ease-in-out infinite;
+            }
+
+            .linktext {
+                text-shadow: 0 0 10px #F75709;
+            }
+        }
+
     }
 }
 
