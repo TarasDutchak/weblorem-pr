@@ -109,28 +109,41 @@ input[type=number] {
     }
 }
 
+.gnh3 {
+    line-height: 120%;
+    font-size: 43px;
+    color: #000;
 
+    span {
+        padding-left: 40px;
+        display: block;
+    }
+}
 
 @media(max-width:1599.8px) {
-    h3 {
+    h3,
+    .gnh3  {
         font-size: 38px;
     }
 }
 
 @media(max-width:1399.8px) {
-    h3 {
+    h3,
+    .gnh3  {
         font-size: 34px;
     }
 }
 
 @media(max-width:767.8px) {
-    h3 {
+    h3,
+    .gnh3  {
         font-size: 28px;
     }
 }
 
 @media(max-width:575.8px) {
-    h3 {
+    h3,
+    .gnh3  {
         font-size: 24px;
     }
 }
