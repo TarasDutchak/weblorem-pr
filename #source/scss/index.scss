@@ -259,32 +259,32 @@
             }
         }
     }
+}
 
-    .histcont {
-        text-decoration: none;
-        color: #fff;
-        font-size: 20px;
-        font-style: italic;
-        line-height: 120%;
-        letter-spacing: 1px;
+.histcont {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-style: italic;
+    line-height: 120%;
+    letter-spacing: 1px;
+    transition: 0.3s;
+
+    img {
+        width: 33px;
+        margin-left: 11px;
+        vertical-align: middle;
+        margin-top: -3px;
         transition: 0.3s;
+    }
+
+    &:hover {
+        color: #F75709;
+        text-shadow: 0 0 10px #F75709;
 
         img {
-            width: 33px;
-            margin-left: 11px;
-            vertical-align: middle;
-            margin-top: -3px;
-            transition: 0.3s;
-        }
-
-        &:hover {
-            color: #F75709;
-            text-shadow: 0 0 10px #F75709;
-
-            img {
-                transform: rotate(40deg);
-                margin-left: 7px;
-            }
+            transform: rotate(40deg);
+            margin-left: 7px;
         }
     }
 }
