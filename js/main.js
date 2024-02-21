@@ -177,6 +177,15 @@ $(document).ready(function () {
         $('.loadercases').show().delay(3000).fadeOut();
     });
 
+    // case slider
+    var swiper = new Swiper(".caseslider", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+    });
 
 
 });
